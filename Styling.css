@@ -1,58 +1,64 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: white;
+*
+{
+    margin: 0;
+    padding : 0; 
+    box-sizing: border-box;
+    font-family: 'poopins', sans-serif;
+    
 }
-header {
-  background-color: linen;
-  padding: 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+body 
+{
+color: white;
 }
-header nav a {
-  margin-left: 1.5em;
-  text-decoration: none;
-  color: black;
+.header
+{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: colour;
+    z-index: 100 ;
 }
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4em 2em;
+.logo
+{
+    position: relative;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
 }
-.hero-text {
-  max-width: 50%;
+.navbar a
+{
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
 }
-.hero-text h1 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+.navbar a:hover
+{
+    color:aqua;
+
 }
-.hero-text p {
-  font-size: 1.1em;
-  color: dimgray;
-}
-.hero-text a.button {
-  display: inline-block;
-  margin-top: 1.2em;
-  padding: 0.75em 1.5em;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.about {
-  padding: 3em 2em;
-  background-color: white;
-}
-.about h2 {
-  margin-bottom: 0.5em;
-}
-footer {
-  text-align: center;
-  padding: 1em;
-  background-color: linen;
-  font-size: 0.9em;
-  color: gray;
+.home
+ {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: rgb(80, 80, 245);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
 }
