@@ -18,17 +18,24 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+
   <section class="hero">
     <div class="hero-content">
-      <h1>Hello <span style="color:var(--accent);">👋</span> I'm Japnam,</h1>
+      <h1>Hello <span style="color:var(--color-gold);">👋 I'm Japnam,</span></h1>
       <div class="subtitle">Computer Science Student At SFU</div>
-      <p>Skilled in interpersonal communication and problem-solving, I excel in fast-paced environments, ensuring efficiency and attention to detail. Leveraging bilingual capabilities in English and Punjabi, I expertly handle customer inquiries, contributing to a positive and productive workplace.</p>
+      <p>
+        Skilled in interpersonal communication and problem-solving, I excel in fast-paced environments,
+        ensuring efficiency and attention to detail. Leveraging bilingual capabilities in English and Punjabi,
+        I expertly handle customer inquiries, contributing to a positive and productive workplace.
+      </p>
+
       <div class="links">
         <a href="https://www.linkedin.com/in/japnammahal/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         <a href="https://www.bcferries.com/" target="_blank">BC Ferries</a>
         <a href="https://hopemission.com/" target="_blank">Hope Mission</a>
       </div>
+
       <div class="widgets">
         <div class="widget" id="clock-widget">
           <h3>Current Time</h3>
@@ -37,22 +44,25 @@
         <div class="widget" id="quote-widget">
           <h3>Inspiration</h3>
           <div id="quote">Loading...</div>
+        </div>
       </div>
     </div>
+
     <img src="books-photo.jpg" alt="Japnam Mahal taking a photo in a bookstore">
   </section>
+
   <footer class="footer">
     &copy; 2024 Japnam Mahal. All rights reserved.
   </footer>
-  <script>
 
+  <script>
     function updateClock() {
       const now = new Date();
       document.getElementById('clock').textContent = now.toLocaleTimeString();
     }
     setInterval(updateClock, 1000);
     updateClock();
-    
+
     fetch('https://api.quotable.io/random')
       .then(res => res.json())
       .then(data => {
@@ -63,4 +73,4 @@
       });
   </script>
 </body>
-</html> 
+</html>
