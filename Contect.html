@@ -1,10 +1,45 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Japnam Mahal</title>
+  <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Contact Me!</h1>
+  <nav>
+    <span class="logo">Japnam Mahal</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Contact</h1>
+    <div class="contact-info">
+      <img src="books-photo.jpg" alt="Japnam Mahal in bookstore">
+      <div class="contact-details">
+        <div><i class="fas fa-envelope"></i> <a href="mailto:japnammahal@gmail.com">japnammahal@gmail.com</a></div>
+        <div><i class="fas fa-map-marker-alt"></i> Surrey, BC, Canada</div>
+        <div><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/japnammahal/" target="_blank">LinkedIn</a></div>
+      </div>
+    </div>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  <footer class="footer">
+    &copy; 2024 Japnam Mahal. All rights reserved.
+  </footer>
 </body>
-</html>
+</html> 
