@@ -9,7 +9,7 @@
   --white: #fff;
   --gray: #666666;
 
-  /* GitHub Pages compatibility variables */
+
   --color-black: #000000;
   --color-white: #ffffff;
   --color-gray: #888888;
@@ -339,4 +339,3 @@ button:hover {
     opacity: 1;
     transform: translateY(0);
   }
-}
