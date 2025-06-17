@@ -13,60 +13,53 @@
     <span class="logo">Japnam Mahal</span>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="About.html">About</a></li>
       <li><a href="experience.html">Experience</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+
   <section class="hero">
     <div class="hero-content">
-      <h1>Hello <span style="color:var(--accent);">👋</span> I'm Japnam,</h1>
-      <div class="subtitle">Computer Science Student &amp; Professional Attendant</div>
-      <p>Skilled in interpersonal communication and problem-solving, I excel in fast-paced environments, ensuring efficiency and attention to detail. Leveraging bilingual capabilities in English and Punjabi, I expertly handle customer inquiries, contributing to a positive and productive workplace.</p>
+      <h1>Hello <span style="color:var(--color-gold);">👋 I'm Japnam,</span></h1>
+      <div class="subtitle">Computer Science Student At SFU</div>
+      <p>
+        Welcome to my portfolio! where I showcase my projects, skills, and experiences that reflect both technical ability and real-world impact.
+      </p>
+
       <div class="links">
-        <a href="https://www.linkedin.com/in/japnammahal/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://www.bcferries.com/" target="_blank">BC Ferries</a>
-        <a href="https://hopemission.com/" target="_blank">Hope Mission</a>
+        <a href="https://www.linkedin.com/in/japnammahal/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:Japnamm4@gmail.com"><i class="fas fa-envelope contact_icon"></i></a>
+      
+
       </div>
-      <div class="widgets">
-        <div class="widget" id="clock-widget">
-          <h3>Current Time</h3>
-          <div id="clock"></div>
-        </div>
-        <div class="widget" id="quote-widget">
-          <h3>Inspiration</h3>
-          <div id="quote">Loading...</div>
-        </div>
-        <div class="widget">
-          <h3>Location</h3>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Flag_of_British_Columbia.svg/1200px-Flag_of_British_Columbia.svg.png" alt="British Columbia Flag" style="width:60px; border-radius:8px; margin-bottom:0.5rem;">
-          <div>Surrey, B.C</div>
-        </div>
-      </div>
+
+     <section class="skills-section">
+  <h2>Technical Skills</h2>
+
+  <div class="skill-category">
+    <h3>Languages</h3>
+    <div class="skill-tags">
+      <span>Java</span><span>Python</span><span>C++</span><span>C</span>
+      <span>JavaScript</span><span>HTML/CSS</span>
     </div>
-    <img src="books-photo.jpg" alt="Japnam Mahal taking a photo in a bookstore">
+  </div>
+  <div class="skill-category">
+    <h3>Developer Tools</h3>
+    <div class="skill-tags">
+      <span>GitHub</span><span>Figma</span>
+    </div>
+  </div>
+
+</section>
+    </div>
+
+    <img src="my-folder/IMG_1899.JPG" alt="Japnam Mahal taking a photo in a bookstore">
   </section>
+
   <footer class="footer">
     &copy; 2024 Japnam Mahal. All rights reserved.
   </footer>
-  <script>
-    // Clock widget
-    function updateClock() {
-      const now = new Date();
-      document.getElementById('clock').textContent = now.toLocaleTimeString();
-    }
-    setInterval(updateClock, 1000);
-    updateClock();
-    // Quote widget
-    fetch('https://api.quotable.io/random')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('quote').textContent = data.content;
-      })
-      .catch(() => {
-        document.getElementById('quote').textContent = 'Stay positive and keep learning!';
-      });
-  </script>
 </body>
-</html> 
+</html>

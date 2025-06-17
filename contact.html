@@ -6,7 +6,7 @@
   <title>Contact | Japnam Mahal</title>
   <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stylesContact.css">
 </head>
 <body>
   <nav>
@@ -18,28 +18,43 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+
   <div class="container">
     <h1>Contact</h1>
     <div class="contact-info">
-      <img src="books-photo.jpg" alt="Japnam Mahal in bookstore">
+      <img src="my-folder/what-is-a-contact-center.jpg.webp" alt="Japnam Mahal in bookstore">
       <div class="contact-details">
-        <div><i class="fas fa-envelope"></i> <a href="mailto:japnammahal@gmail.com">japnammahal@gmail.com</a></div>
-        <div><i class="fas fa-map-marker-alt"></i> Surrey, BC, Canada</div>
-        <div><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/japnammahal/" target="_blank">LinkedIn</a></div>
+        <div><i class="fas fa-envelope"></i> <a href="mailto:japnammahal@gmail.com"></a></div>
+        <div><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/japnammahal/" target="_blank"></a></div>
       </div>
-    </div>
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    </div>  
+</head>
+<body class="contact-page">
+  <div class="contact-container">
+  <form class="contact-form" action="https://formsubmit.co/japnamm4@gmail.com" method="POST">
+    
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="thankyou.html">
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="Please enter your email" required>
+
+    <label for="mobile">Mobile</label>
+    <input id="mobile" name="mobile" type="text" placeholder="Enter mobile" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+    <button type="submit">Submit &gt;</button>
+  </form>
+</div>
   </div>
+  <div class="contact-footer">
   <footer class="footer">
     &copy; 2024 Japnam Mahal. All rights reserved.
   </footer>
+  </div>
 </body>
-</html> 
+</html>
+
+ 
