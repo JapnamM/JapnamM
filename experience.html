@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Experience | Japnam Mahal</title>
-  <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="stylesExperience.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav>
@@ -18,45 +18,145 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <div class="container">
-    <h1>Experience</h1>
-    <div class="exp-block">
-      <img src="https://www.bcferries.com/webimage/BCFerriesLogo.png" alt="BC Ferries logo">
+
+  <main class="exp-main">
+    <div class="exp-title-row">
+      <h1 class="projects-title">Projects</h1>
+      <a href="my-folder/Japnam_Resume.pdf" class="resume-link" target="_blank">View Resume</a>
+    </div>
+    <hr class="exp-divider" />
+
+  
+    <section class="exp-card">
+      <div class="exp-icon">
+        <img src="my-folder/Playlist.png" alt="Custom Playlist Manager" />
+      </div>
       <div class="exp-details">
-        <h3>Professional Attendant</h3>
-        <div class="date">May 2023 – Present</div>
+        <h2>Custom Playlist Manager</h2>
+        <div class="exp-dates">September 2024</div>
         <ul>
-          <li>Provide exceptional customer service and ensure passenger safety.</li>
-          <li>Efficiently manage boarding and disembarking processes.</li>
-          <li>Communicate effectively with a diverse clientele.</li>
+          <li>Designed a linked-list-based playlist system in C++ with features like add, remove, and swap.</li>
+          <li>Optimized memory and pointer logic for performance and reliability.</li>
+          <li>Handled invalid input via exceptions to reduce crashes and data loss.</li>
+          <li>Built and tested in Linux using command-line tools.</li>
+        </ul>
+        <div class="exp-tags">
+          <span>C++</span><span>Linked Lists</span><span>Linux</span><span>Error Handling</span>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="exp-card">
+      <div class="exp-icon">
+        <img src="my-folder/Lock.png" alt="Raspberry Pi Safe Lock System" />
+      </div>
+      <div class="exp-details">
+        <h2>Raspberry Pi Safe Locking System</h2>
+        <div class="exp-dates">April 2024</div>
+        <ul>
+          <li>Built a servo-lock system with keypad and LCD using Raspberry Pi.</li>
+          <li>Added a 3-strike lockout and 5-min delay for realism.</li>
+          <li>Integrated GPIO circuits for precise control.</li>
+          <li>Used Python, RPi.GPIO, and SMBus2 for I2C & peripheral management.</li>
+        </ul>
+        <div class="exp-tags">
+          <span>Python</span><span>Embedded</span><span>GPIO</span><span>Raspberry Pi</span>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="exp-card">
+      <div class="exp-icon">
+        <img src="my-folder/Rc.jpg" alt="Autonomous Raspberry Pi Car" />
+      </div>
+      <div class="exp-details">
+        <h2>Autonomous Raspberry Pi Car</h2>
+        <div class="exp-dates">March 2024</div>
+        <ul>
+          <li>Designed and built an autonomous car powered by a Raspberry Pi.</li>
+          <li>Used ultrasonic sensors and Python-based logic to detect and avoid obstacles in real time.</li>
+          <li>Integrated DC motors and drivers for precision movement and responsiveness.</li>
+        </ul>
+        <div class="exp-tags">
+          <span>Python</span><span>Raspberry Pi</span><span>Ultrasonic Sensors</span><span>GPIO</span>
+        </div>
+      </div>
+    </section>
+
+   
+    <h2 class="exp-title">Work Experience</h2>
+    <hr class="exp-divider" />
+
+    <section class="exp-card">
+      <div class="exp-icon">
+        <img src="my-folder/bc.png" alt="BC Ferries" />
+      </div>
+      <div class="exp-details">
+        <h2>Terminal Attendant – BC Ferries</h2>
+        <div class="exp-dates">Jun 2023 – Mar 2025</div>
+        <ul>
+          <li>Handled baggage and maintained clean terminal environments.</li>
+          <li>Guided passengers and ensured safe, efficient boarding.</li>
         </ul>
       </div>
-    </div>
-    <div class="exp-block">
-      <img src="https://hopemission.com/wp-content/uploads/2019/10/hopemission-logo.png" alt="Hope Mission logo">
+    </section>
+
+    <section class="exp-card">
+      <div class="exp-icon">
+        <img src="my-folder/Hope.jpg" alt="Hope Mission Coordinator" />
+      </div>
       <div class="exp-details">
-        <h3>Volunteer</h3>
-        <div class="date">2022 – Present</div>
+        <h2>Volunteer Coordinator – Hope Mission</h2>
+        <div class="exp-dates">Jun 2019 – Oct 2021</div>
         <ul>
-          <li>Assist in organizing and distributing meals to those in need.</li>
-          <li>Support event logistics and community outreach programs.</li>
+          <li>Managed food and clothing distribution to community members.</li>
+          <li>Assisted with outreach services and referrals.</li>
+          <li>Engaged in staff training and team development efforts.</li>
         </ul>
       </div>
-    </div>
-    <div class="exp-block">
-      <img src="books-photo.jpg" alt="Japnam Mahal in bookstore">
+    </section>
+
+    
+    <h2 class="exp-title">Volunteer Experience</h2>
+    <hr class="exp-divider" />
+
+    <section class="exp-card">
+      <div class="exp-icon">
+        <img src="my-folder/Hope.jpg" alt="Hope Mission Volunteer" />
+      </div>
       <div class="exp-details">
-        <h3>Personal Projects</h3>
-        <div class="date">Ongoing</div>
+        <h2>Hope Mission Volunteer</h2>
+        <div class="exp-dates">2022 – Present</div>
         <ul>
-          <li>Designed and developed a modern, accessible personal website.</li>
-          <li>Showcases education, experience, and contact information.</li>
+          <li>Helped organize and serve meals for low-income and homeless individuals.</li>
+          <li>Contributed to maintaining a safe, supportive environment for guests.</li>
         </ul>
       </div>
+    </section>
+
+    <section class="exp-card">
+      <div class="exp-icon">
+        <img src="my-folder/Air.jpeg" alt="Air Cadets" />
+      </div>
+      <div class="exp-details">
+        <h2>Volunteer Coordinator – Air Cadets</h2>
+        <div class="exp-dates">2021 – 2022</div>
+        <ul>
+          <li>Supervised youth and led training on discipline and leadership.</li>
+          <li>Coordinated community service events and outings.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+   <footer class="footer">
+    <div class="footer-icons">
+      <a href="mailto:japnam@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/japnammahal/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
-  </div>
-  <footer class="footer">
-    &copy; 2024 Japnam Mahal. All rights reserved.
+    <p>&copy; 2024 Japnam Mahal. All rights reserved.</p>
   </footer>
 </body>
-</html> 
+</html>
