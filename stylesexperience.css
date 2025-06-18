@@ -8,18 +8,17 @@
   --exp-tag-bg: #232323;
   --exp-tag-color: #fff;
   --exp-tag-radius: 1.2rem;
-  --exp-pink: #e0aee0;
-
+  --exp-accent: #ffd700;
+  --exp-black: #000;
 
   --white: #ffffff;
   --black: #000000;
-  --accent: #ffd700;
   --color-black: #000000;
 }
 
 body {
-  background: var(--exp-bg);
-  color: var(--exp-white);
+  background: #111;
+  color: #fff;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
@@ -29,11 +28,36 @@ body {
   padding: 3rem 1.5rem 2rem 1.5rem;
 }
 
-.exp-title {
-  font-size: 3rem;
+.exp-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.resume-link {
+  background: #222;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  border: 1px solid #444;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.resume-link:hover {
+  background: #fff;
+  color: #111;
+  border: 1px solid #fff;
+}
+
+.projects-title, .exp-title {
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: var(--exp-white);
+  margin: 2.5rem 0 0.5rem 0;
+  color: #fff;
 }
 
 .exp-divider {
@@ -44,7 +68,7 @@ body {
 
 .exp-card {
   display: flex;
-  background: var(--exp-card-bg);
+  background: #181818;
   border-radius: 1.2rem;
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
   padding: 2.5rem 2rem;
@@ -89,38 +113,23 @@ body {
   gap: 1.2rem;
 }
 
-.exp-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-.exp-header h2 {
-  font-size: 2rem;
+.exp-details h2 {
+  font-size: 1.3rem;
   margin: 0 0 0.2rem 0;
-  color: var(--exp-white);
-}
-
-.exp-role {
-  color: var(--exp-pink);
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-bottom: 0.2rem;
+  color: #fff;
 }
 
 .exp-dates {
-  color: var(--exp-gray);
+  color: #b0b3bb;
   font-size: 1.1rem;
   font-weight: 500;
   white-space: nowrap;
 }
 
-.exp-details p {
-  color: var(--exp-gray);
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin: 0;
+.exp-details ul {
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
+  color: #b0b3bb;
 }
 
 .exp-tags {
@@ -131,13 +140,44 @@ body {
 }
 
 .exp-tags span {
-  background: var(--exp-tag-bg);
-  color: var(--exp-tag-color);
-  border-radius: var(--exp-tag-radius);
+  background: #232323;
+  color: #fff;
+  border-radius: 1.2rem;
   padding: 0.5rem 1.2rem;
   font-size: 1rem;
   font-weight: 500;
   border: 1px solid #353535;
+}
+
+.exp-link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1.5px solid #ffd700;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.exp-link:hover {
+  color: #ffd700;
+  border-color: #fff;
+}
+
+.exp-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #ffd700;
+  color: #000;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.exp-btn:hover {
+  background: #fff;
+  color: #ffd700;
+  transform: translateY(-2px) scale(1.04);
 }
 
 @media (max-width: 900px) {
@@ -148,11 +188,11 @@ body {
     gap: 1.5rem;
   }
   .exp-icon img {
-    width: 120px;
-    height: 120px;
+    width: 48px;
+    height: 48px;
   }
-  .exp-title {
-    font-size: 2.2rem;
+  .projects-title, .exp-title {
+    font-size: 1.5rem;
   }
 }
 
@@ -163,83 +203,6 @@ body {
   .exp-card {
     padding: 1.2rem 0.5rem;
   }
-  .exp-title {
-    font-size: 1.5rem;
-  }
-}
-
-.exp-title-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.resume-link {
-  background: #222;
-  color: #fff;
-  border-radius: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1rem;
-  border: 1px solid #444;
-  transition: background 0.2s, color 0.2s, border 0.2s;
-}
-
-.resume-link:hover {
-  background: #fff;
-  color: #111;
-  border: 1px solid #fff;
-}
-
-.projects-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 2.5rem 0 0.5rem 0;
-  color: #fff;
-}
-
-@keyframes fadeInUpExp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.exp-link {
-  color: var(--white);
-  text-decoration: none;
-  border-bottom: 1.5px solid var(--accent, #ffd700);
-  transition: color 0.2s, border-color 0.2s;
-}
-
-.exp-link:hover {
-  color: var(--accent, #ffd700);
-  border-color: var(--white);
-}
-
-.exp-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background: var(--accent, #ffd700);
-  color: var(--black);
-  border-radius: 0.5rem;
-  padding: 0.5rem 1.2rem;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background 0.2s, color 0.2s, transform 0.2s;
-}
-
-.exp-btn:hover {
-  background: var(--white);
-  color: var(--accent, #ffd700);
-  transform: translateY(-2px) scale(1.04);
 }
 
 .footer {
@@ -265,4 +228,15 @@ body {
 .footer-icons a:hover {
   transform: translateY(-3px);
   color: var(--accent);
+}
+
+@keyframes fadeInUpExp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
