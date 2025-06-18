@@ -9,6 +9,12 @@
   --exp-tag-color: #fff;
   --exp-tag-radius: 1.2rem;
   --exp-pink: #e0aee0;
+
+  /* ✅ Added missing variables */
+  --white: #ffffff;
+  --black: #000000;
+  --accent: #ffd700;
+  --color-black: #000000;
 }
 
 body {
@@ -168,6 +174,7 @@ body {
   justify-content: space-between;
   gap: 2rem;
 }
+
 .resume-link {
   background: #222;
   color: #fff;
@@ -179,11 +186,13 @@ body {
   border: 1px solid #444;
   transition: background 0.2s, color 0.2s, border 0.2s;
 }
+
 .resume-link:hover {
   background: #fff;
   color: #111;
   border: 1px solid #fff;
 }
+
 .projects-title {
   font-size: 2rem;
   font-weight: 700;
@@ -208,6 +217,7 @@ body {
   border-bottom: 1.5px solid var(--accent, #ffd700);
   transition: color 0.2s, border-color 0.2s;
 }
+
 .exp-link:hover {
   color: var(--accent, #ffd700);
   border-color: var(--white);
@@ -217,7 +227,7 @@ body {
   display: inline-block;
   margin-top: 1rem;
   background: var(--accent, #ffd700);
-  color: var(--black, #000);
+  color: var(--black);
   border-radius: 0.5rem;
   padding: 0.5rem 1.2rem;
   font-weight: 600;
@@ -225,11 +235,13 @@ body {
   font-size: 1rem;
   transition: background 0.2s, color 0.2s, transform 0.2s;
 }
+
 .exp-btn:hover {
   background: var(--white);
   color: var(--accent, #ffd700);
   transform: translateY(-2px) scale(1.04);
 }
+
 .footer {
   background: var(--color-black);
   color: var(--white);
