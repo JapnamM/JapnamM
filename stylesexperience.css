@@ -10,14 +10,17 @@
   --exp-tag-radius: 1.2rem;
   --exp-accent: #ffd700;
   --exp-black: #000;
+
+  
   --white: #ffffff;
   --black: #000000;
   --color-black: #000000;
+  --accent: #ffd700;
 }
 
 body {
-  background: var(--exp-bg);
-  color: var(--exp-white);
+  background: #111;
+  color: #fff;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
@@ -67,7 +70,7 @@ body {
 
 .exp-card {
   display: flex;
-  background: var(--exp-card-bg);
+  background: #181818;
   border-radius: 1.2rem;
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
   padding: 2.5rem 2rem;
@@ -81,6 +84,12 @@ body {
 
 .exp-card:nth-of-type(1) { animation-delay: 0.1s; }
 .exp-card:nth-of-type(2) { animation-delay: 0.2s; }
+.exp-card:nth-of-type(3) { animation-delay: 0.3s; }
+.exp-card:nth-of-type(4) { animation-delay: 0.4s; }
+.exp-card:nth-of-type(5) { animation-delay: 0.5s; }
+.exp-card:nth-of-type(6) { animation-delay: 0.6s; }
+.exp-card:nth-of-type(7) { animation-delay: 0.7s; }
+.exp-card:nth-of-type(8) { animation-delay: 0.8s; }
 
 .exp-icon {
   display: flex;
@@ -113,7 +122,7 @@ body {
 }
 
 .exp-dates {
-  color: var(--exp-gray);
+  color: #b0b3bb;
   font-size: 1.1rem;
   font-weight: 500;
   white-space: nowrap;
@@ -122,7 +131,7 @@ body {
 .exp-details ul {
   margin: 0.5rem 0 0 1.2rem;
   padding: 0;
-  color: var(--exp-gray);
+  color: #b0b3bb;
 }
 
 .exp-tags {
@@ -133,9 +142,9 @@ body {
 }
 
 .exp-tags span {
-  background: var(--exp-tag-bg);
-  color: var(--exp-tag-color);
-  border-radius: var(--exp-tag-radius);
+  background: #232323;
+  color: #fff;
+  border-radius: 1.2rem;
   padding: 0.5rem 1.2rem;
   font-size: 1rem;
   font-weight: 500;
@@ -145,19 +154,19 @@ body {
 .exp-link {
   color: #fff;
   text-decoration: none;
-  border-bottom: 1.5px solid var(--exp-accent);
+  border-bottom: 1.5px solid #ffd700;
   transition: color 0.2s, border-color 0.2s;
 }
 
 .exp-link:hover {
-  color: var(--exp-accent);
+  color: #ffd700;
   border-color: #fff;
 }
 
 .exp-btn {
   display: inline-block;
   margin-top: 1rem;
-  background: var(--exp-accent);
+  background: #ffd700;
   color: #000;
   border-radius: 0.5rem;
   padding: 0.5rem 1.2rem;
@@ -169,7 +178,7 @@ body {
 
 .exp-btn:hover {
   background: #fff;
-  color: var(--exp-accent);
+  color: #ffd700;
   transform: translateY(-2px) scale(1.04);
 }
 
@@ -220,7 +229,7 @@ body {
 
 .footer-icons a:hover {
   transform: translateY(-3px);
-  color: var(--exp-accent);
+  color: var(--accent);
 }
 
 @keyframes fadeInUpExp {
